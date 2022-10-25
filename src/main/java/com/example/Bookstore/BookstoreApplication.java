@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import com.example.Bookstore.domain.Book;
 import com.example.Bookstore.domain.BookRepository;
 
+
 @SpringBootApplication
 public class BookstoreApplication {
 
