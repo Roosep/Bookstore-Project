@@ -20,9 +20,9 @@ public class BookstoreApplication {
 	@Bean
 	public CommandLineRunner demo(BookRepository repository) {
 		return (args) -> {
-			Book s1 = new Book("And Then There Were None", "Agatha Christie", 1939, "978-0062073488", 20.00);
-			Book s2 = new Book("To Kill A Mockingbird", "Harper Lee", 1988, "978-0446310789", 15.99);
-			Book s3 = new Book("The Boy in the Striped Pajamas", "John Boyne", 2006, "978-0385751063", 17.99);
+			Book s1 = new Book("And Then There Were None", "Agatha Christie", "1939", "978-0062073488", 20.00);
+			Book s2 = new Book("To Kill A Mockingbird", "Harper Lee", "1988", "978-0446310789", 15.99);
+			Book s3 = new Book("The Boy in the Striped Pajamas", "John Boyne", "2006", "978-0385751063", 17.99);
 			
 			repository.save(s1);
 			repository.save(s2);
