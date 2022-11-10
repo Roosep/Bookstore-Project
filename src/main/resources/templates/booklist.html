@@ -9,6 +9,16 @@
 	<h1>Books</h1>
 	<table class="table table-stiped">
 		<tbody>
+			<tr>
+				<td>Title</td>
+				<td>Author</td>
+				<td>Publishing year</td>
+				<td>Isbn</td>
+				<td>Price</td>
+				<td>Category</td>
+				<td></td>
+			</tr>
+			
 			<tr th:each = "book : ${books}">
 				<td th:text="${book.title}"></td>
 				<td th:text="${book.author}"></td>
@@ -17,6 +27,7 @@
 				<td th:text="${book.price}"></td>
 				<td th:text="${book.category.categoryName}"></td>
 				<td><a th:href="@{/delete/{id}(id=${book.id})}" class="btn btn-danger">Delete</a></td>
+				<td><a th:href="@{/edit/{id}(id=${book.id})}" class="btn btn-success">Edit</a></td>
 		</tbody>
 	</table>
 	<a href="/addbook" class="btn btn-success">Add Book</a>
